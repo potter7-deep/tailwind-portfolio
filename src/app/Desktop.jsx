@@ -4,17 +4,19 @@
 function Desktop(){
     return(
         <>
-            <section id="mobile-menu" className="absolute top-0 pt-0 bg-slate-600 w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
-                <button className="text-8xl self-end">
-                    &times;
+            <div>
+                <button id="mobile-button" className="text-3xl md:hidden cursor-pointer">
+                    &#9776;
                 </button>
-                <nav className="flex flex-col min-h-screen items-center py-2" aria-label="mobile">
-                    <a href="#hero" className="w-full text-center hover:opacity-90 hover:text-shadow-2xs active:text-shadow-2xs active:text-sky-300 active:no-underline hover:text-sky-300 hover:no-underline py-4 text-xl font-medium text-white">Home</a>
-                    <a href="#about" className="w-full text-center hover:opacity-90 hover:text-shadow-2xs active:text-shadow-2xs active:text-sky-300 active:no-underline hover:text-sky-300 hover:no-underline py-4 text-xl font-medium text-white">About myself</a>
-                    <a href="#projects" className="w-full text-center hover:opacity-90 hover:text-shadow-2xs active:text-shadow-2xs active:text-sky-300 active:no-underline hover:text-sky-300 hover:no-underline py-4 text-xl font-medium text-white">Projects</a>
-                    <a href="#contact" className="w-full text-center hover:opacity-90 hover:text-shadow-2xs active:text-shadow-2xs active:text-sky-300 active:no-underline hover:text-sky-300 hover:no-underline py-4 text-xl font-medium text-white">Contact me</a>
+                <nav className="hidden md:block space-x-8 text-xl" arial-label="main">
+                    <a href="#about" className="hover:opacity-90">About</a>
+                    <a href="#services" className="hover:opacity-90">projects</a>
+                    <a href="#testimonials" className="hover:opacity-90">People's say</a>
+                    <a href="#skills" className="hover:opacity-90">My skills</a>
+                    <a href="#contact" className="hover:opacity-90">Contact me</a>
+                    <a href="#footer" className="hover:opacity-90">Legal</a>
                 </nav>
-            </section>
+            </div>
         </>
     );
 }

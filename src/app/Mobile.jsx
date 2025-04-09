@@ -3,16 +3,18 @@
 
 function Mobile(){
     return(
-        <div>
-            <button id="mobile-button" className="text-3xl md:hidden cursor-pointer">
-                &#9776;
+        <section id="mobile-menu" className="absolute top-0 pt-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden">
+            <button className="text-8xl self-end">
+                &times;
             </button>
-            <nav className="hidden md:block space-x-8 text-xl" arial-label="main">
-                <a href="#about" className="hover:opacity-90">About myself.</a>
-                <a href="#projects" className="hover:opacity-90">Projects</a>
-                <a href="#contact" className="hover:opacity-90">Contact me</a>
+            <nav className="flex flex-col min-h-screen items-center py-2" aria-label="mobile">
+                <a href="#home" className="w-full text-center hover:opacity-90 py-4">Home</a>
+                <a href="#about" className="w-full text-center hover:opacity-90 py-4">About</a>
+                <a href="#servicer" className="w-full text-center hover:opacity-90 py-4">Projects</a>
+                <a href="#contact" className="w-full text-center hover:opacity-90 py-4">Contact me</a>
+                <a href="#footer" className="w-full text-center hover:opacity-90 py-4">Legal</a>
             </nav>
-        </div>
+        </section>
     );
 }
 

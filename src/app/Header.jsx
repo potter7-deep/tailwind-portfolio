@@ -5,17 +5,15 @@ import Desktop from './Desktop';
 function Header(){
     return(
         <>
-            <header className="sticky top-0 z-10" >
-                <nav className="header sticky top-0 z-100 left-0 w-full p-6 flex justify-between items-center ">
-        
-                    <a href="#logo" className="logo text-4xl font-bold text-white cursor-default">Portfolio</a>
-            
+            <header class="backdrop-blur-md text-white sticky top-0 z-10 max-w-full">
+                <section class="max-w-full mx-auto p-4 flex justify-between items-center">
+                    <h1 class="text-4xl font-bold cursor-pointer">
+                        <a href="#hero">D A N .</a>
+                    </h1>
                     <Desktop/>
-                    <Mobile/>
-                </nav>
+                </section>
+                <Mobile/>
             </header>
-
-            <h1 className='text-6xl '>hello world</h1>
         </>
     );
 }
