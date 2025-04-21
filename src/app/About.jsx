@@ -1,4 +1,4 @@
-import project1 from './IMG/web1.jpg';
+import myImage from './IMG/image.png'
 import Change from './Change.jsx'
 import Buttons from './Buttons';
 
@@ -29,7 +29,7 @@ function About(){
             <div class="home-img">
                 <div class="relative flex justify-center items-center overflow-hidden w-[35vw] h-[35vw] bg-black rounded-2xl p-[7px] mix-blend-lighten">
                     <div class="img-item relative flex justify-center overflow-hidden w-full h-full bg-black bg-cover z-1">
-                        <img src="./image.png" alt="Dan Maina's Image" class="profile-img"/>
+                        <img src={myImage} alt="Dan Maina's Image" class="profile-img"/>
                     </div>
                 </div>
             </div>
